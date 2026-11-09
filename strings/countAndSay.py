@@ -13,4 +13,12 @@ def countAndSay(n):
         curr = rle
     return curr
 
-print(countAndSay(4))            
+print(countAndSay(4))   
+
+"""
+    output
+    1 - n  = 1
+    11 - n = 2
+    21 - n = 3
+    1211 - final answer for n = 4
+"""

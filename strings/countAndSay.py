@@ -3,13 +3,12 @@ def countAndSay(n):
     for i in range(2, n + 1):
         count = 1
         rle = ""
-        for j in range(1, len(curr)):
-            if curr[j] == curr[j - 1]:
+        for j in range(1, len(curr) + 1):
+            if j < len(curr) and curr[j] == curr[j - 1]:
                 count += 1
             else:
                 rle += str(count) + curr[j - 1]
                 count = 1
-        rle += str(count) + curr[-1]
         curr = rle
     return curr
 
